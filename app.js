@@ -22,7 +22,7 @@ app.get('/mobile.html', function(req, res) {
 
 // server.listen(1337);
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().post;
-});
+// var server = app.listen(3000, function() {
+//   var host = server.address().address;
+//   var port = server.address().post;
+// });
