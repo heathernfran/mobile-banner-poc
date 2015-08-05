@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "0.12.2"
+  }
   "dependencies": {
     "smart-app-banner": "^1.1.3"
   },
