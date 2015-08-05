@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname));
 
 app.get('/', function(req, res) {
-  res.send('index.html');
+  res.render('index.html');
 });
 
 app.get('/mobile.html', function(req, res) {
@@ -22,7 +22,8 @@ app.get('/mobile.html', function(req, res) {
 
 // server.listen(1337);
 
-// var server = app.listen(3000, function() {
-//   var host = server.address().address;
-//   var port = server.address().post;
-// });
+app.listen(app.get('port'), function() {
+  // var host = server.address().address;
+  // var port = server.address().post;
+  console.log('node app running on port ' + app.get('port'));
+});
